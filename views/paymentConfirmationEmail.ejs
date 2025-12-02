@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation - Emma Health</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f8f5ff;
+            color: #2d2d2d;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 0;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(147, 112, 219, 0.12);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #9370db, #7b68ee);
+            padding: 40px 20px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 4px;
+            background-color: #ffffff;
+            border-radius: 2px;
+        }
+        .content {
+            padding: 40px 30px;
+            background-color: #ffffff;
+        }
+        .welcome-text {
+            font-size: 18px;
+            color: #2d2d2d;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .otp-container {
+            margin: 30px 0;
+        }
+        .otp-label {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .otp-box {
+            background-color: #f8f5ff;
+            padding: 20px 30px;
+            font-size: 32px;
+            font-weight: 600;
+            color: #7b68ee;
+            border-radius: 12px;
+            display: inline-block;
+            letter-spacing: 4px;
+            border: 2px solid #e6d7f7;
+            margin: 15px 0;
+        }
+        .info-text {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .support-text {
+            font-size: 15px;
+            color: #7b68ee;
+            margin-top: 25px;
+            font-weight: 500;
+        }
+        .footer {
+            background-color: #f8f5ff;
+            padding: 25px;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #e6d7f7;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #7b68ee;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 0;
+            }
+            .container {
+                width: 90%;
+            }
+            .header {
+                padding: 30px 15px;
+                font-size: 20px;
+            }
+            .content {
+                padding: 30px 20px;
+            }
+            .otp-box {
+                font-size: 28px;
+                padding: 15px 25px;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="header">Payment Confirmation</div>
+        <div class="content">
+            <div class="welcome-text">
+                Hello <%= userName %>,
+            </div>
+            <p class="info-text">
+                Thank you for your payment! Your order is confirmed.
+            </p>
+            <p class="info-text">
+                If you have any questions or concerns, please contact our support team.
+            </p>
+            <p class="support-text">
+                Need help? Contact our support team for assistance.
+            </p>
+        </div>
+        <div class="footer">
+            <div class="logo">Emma Health</div>
+            <p>&copy; 2024 Emma Health. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
